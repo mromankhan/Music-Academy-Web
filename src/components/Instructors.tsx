@@ -1,28 +1,25 @@
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { WavyBackground } from "./ui/wavy-background";
-import imranKhanImg from '@/images/imran khan.jpeg';
-import elonImg from '@/images/elon musk.jpeg';
-import markImg from '@/images/mark zekerburg.jpeg';
-import bilgatesImg from '@/images/billgates.jpeg';
 
-// type instructorsType = [{
-//     id : number,
-//     name: string,
-//     designation: string,
-//     image: string
-// }]
-const instructors:any = [
+type instructorsType = {
+    id : number,
+    name: string,
+    designation: string,
+    image: string
+}
+
+const instructors: instructorsType[] = [
     {
         id: 1,
         name: 'PM Imran Khan',
         designation: 'Vocal Coach',
-        image: imranKhanImg
+        image: "/imranKhan.jpeg"
     },
     {
         id: 2,
         name: 'Elon Musk',
         designation: 'Guitar Instructor',
-        image: elonImg
+        image: "/elonMusk.jpeg"
 
            
     },
@@ -30,14 +27,14 @@ const instructors:any = [
         id: 3,
         name: 'Mark Zekerburg',
         designation: 'Piano Teacher',
-        image: markImg
+        image: "/markZekerburg.jpeg"
             
     },
     {
         id: 4,
         name: 'Billgates',
         designation: 'Drumming Expert',
-        image: bilgatesImg
+        image: "/billgates.jpeg"
            
     },
 ];

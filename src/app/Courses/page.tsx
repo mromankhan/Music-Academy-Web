@@ -6,7 +6,7 @@ import courseData from "@/data/music_courses.json"
 import Loader from "@/components/Loader";
 import Navbar from "@/components/Navbar";
  
-export default function page() {
+export default function Courses() {
 
   const [isLoading, setisLoading] = useState(true);
 
