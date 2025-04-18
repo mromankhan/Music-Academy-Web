@@ -1,22 +1,10 @@
 "use client"; 
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import courseData from "@/data/music_courses.json"
-import Loader from "@/components/Loader";
 import Navbar from "@/components/Navbar";
  
 export default function Courses() {
-
-  const [isLoading, setisLoading] = useState(true);
-
-  useEffect(()=>{
-    const timer = setTimeout(() => {
-      setisLoading(false);
-    }, 1000);
-
-    return () => clearTimeout(timer)
-  },[])
 
   return (
     <>

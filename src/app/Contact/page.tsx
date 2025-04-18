@@ -1,5 +1,5 @@
 'use client';
-import { FormEvent, useEffect, useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { BackgroundBeams } from '@/components/ui/background-beams';
 import Navbar from '@/components/Navbar';
