@@ -18,11 +18,6 @@ export default function Courses() {
     return () => clearTimeout(timer)
   },[])
 
-
-  if(isLoading){
-    return <div className="flex justify-center items-center h-screen bg-black"><Loader /></div>
-  }
-
   return (
     <>
      <div className="relative w-full flex items-center justify-center">

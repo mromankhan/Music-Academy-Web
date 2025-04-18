@@ -14,11 +14,8 @@ interface CourseType {
     isFeatured: boolean,
 }
 
-
-
 export default function FeaturedCourses() {
-    const featuredCourses = courseData.courses.filter
-        ((course: CourseType) => course.isFeatured)
+    const featuredCourses = courseData.courses.filter((course: CourseType) => course.isFeatured)
     return (
         <>
             <div className="py-12 bg-gray-900">
@@ -52,15 +49,15 @@ export default function FeaturedCourses() {
                     </div>
 
                 </div>
-                <div className="mt-4 text-center">
-                        <Link href={"/Courses"}>
+                <div className="mt-10 text-center">
+                    <Link href={"/Courses"}>
                         <Button borderRadius="1.75rem" className="bg-white dark:bg-black 
                         text-black dark:text-white border-neutral-200 
                         dark:border-slate-800">
-                        View All Courses
+                            View All Courses
                         </Button>
-                        </Link>
-                    </div>
+                    </Link>
+                </div>
             </div>
         </>
     )
